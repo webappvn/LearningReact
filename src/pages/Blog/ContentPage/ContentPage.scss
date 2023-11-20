@@ -1,0 +1,11 @@
+.item-news {
+  .title-news {
+    a {
+      font-size: 22px;
+      color: #000;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
