@@ -1,74 +1,74 @@
-import { FunctionComponent } from 'react';
-import { Button, Card, Col, List, Row } from 'antd';
-import Meta from 'antd/es/card/Meta';
-import { ArrowDownOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
-import './ContentPage.scss';
+import { FunctionComponent } from "react";
+import { Button, Card, Col, List, Row } from "antd";
+import Meta from "antd/es/card/Meta";
+import { ArrowDownOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import "./ContentPage.scss";
 
 interface ContentPageProps {}
 
 const listNews1 = [
   {
-    image: '/content1.png',
+    image: "/content1.png",
     title: (
-      <div className='item-news'>
-        <Link to='/blog/tai-chinh-bao-hiem'>Tài Chính - Bảo Hiểm</Link>
-        <div className='title-news'>
-          <Link to='/blog/cach-tinh-lai-suat-tra-gop-dien-thoai'>
+      <div className="item-news">
+        <Link to="/blog/tai-chinh-bao-hiem">Tài Chính - Bảo Hiểm</Link>
+        <div className="title-news">
+          <Link to="/blog/bai-viet/cach-tinh-lai-suat-tra-gop-dien-thoai">
             Học lỏm mẹo chi tiêu tiết kiệm trong gia đình của người Do Thái
           </Link>
         </div>
       </div>
     ),
     description:
-      'Bỏ túi cách chi tiêu tiết kiệm trong gia đình sẽ giúp bạn có kế hoạch',
+      "Bỏ túi cách chi tiêu tiết kiệm trong gia đình sẽ giúp bạn có kế hoạch",
   },
 ];
 const listNews = [
   {
-    image: '/content1.png',
+    image: "/content1.png",
     title: (
-      <div className='item-news'>
-        <Link to='/blog/tai-chinh-bao-hiem'>Tài Chính - Bảo Hiểm</Link>
-        <div className='title-news'>
-          <Link to='/blog/cach-tinh-lai-suat-tra-gop-dien-thoai'>
+      <div className="item-news">
+        <Link to="/blog/tai-chinh-bao-hiem">Tài Chính - Bảo Hiểm</Link>
+        <div className="title-news">
+          <Link to="/blog/bai-viet/cach-tinh-lai-suat-tra-gop-dien-thoai">
             Học lỏm mẹo chi tiêu tiết kiệm trong gia đình của người Do Thái
           </Link>
         </div>
       </div>
     ),
     description:
-      'Bỏ túi cách chi tiêu tiết kiệm trong gia đình sẽ giúp bạn có kế hoạch',
+      "Bỏ túi cách chi tiêu tiết kiệm trong gia đình sẽ giúp bạn có kế hoạch",
   },
   {
-    image: '/content1.png',
+    image: "/content1.png",
     title: (
-      <div className='item-news'>
-        <Link to='/blog/tai-chinh-bao-hiem'>Tài Chính - Bảo Hiểm</Link>
-        <div className='title-news'>
-          <Link to='/blog/cach-tinh-lai-suat-tra-gop-dien-thoai'>
+      <div className="item-news">
+        <Link to="/blog/tai-chinh-bao-hiem">Tài Chính - Bảo Hiểm</Link>
+        <div className="title-news">
+          <Link to="/blog/bai-viet/cach-tinh-lai-suat-tra-gop-dien-thoai">
             Học lỏm mẹo chi tiêu tiết kiệm trong gia đình của người Do Thái
           </Link>
         </div>
       </div>
     ),
     description:
-      'Bỏ túi cách chi tiêu tiết kiệm trong gia đình sẽ giúp bạn có kế hoạch',
+      "Bỏ túi cách chi tiêu tiết kiệm trong gia đình sẽ giúp bạn có kế hoạch",
   },
   {
-    image: '/content1.png',
+    image: "/content1.png",
     title: (
-      <div className='item-news'>
-        <Link to='/blog/tai-chinh-bao-hiem'>Tài Chính - Bảo Hiểm</Link>
-        <div className='title-news'>
-          <Link to='/blog/cach-tinh-lai-suat-tra-gop-dien-thoai'>
+      <div className="item-news">
+        <Link to="/blog/tai-chinh-bao-hiem">Tài Chính - Bảo Hiểm</Link>
+        <div className="title-news">
+          <Link to="/blog/bai-viet/cach-tinh-lai-suat-tra-gop-dien-thoai">
             Học lỏm mẹo chi tiêu tiết kiệm trong gia đình của người Do Thái
           </Link>
         </div>
       </div>
     ),
     description:
-      'Bỏ túi cách chi tiêu tiết kiệm trong gia đình sẽ giúp bạn có kế hoạch',
+      "Bỏ túi cách chi tiêu tiết kiệm trong gia đình sẽ giúp bạn có kế hoạch",
   },
 ];
 
@@ -79,8 +79,8 @@ function NumberList() {
         hoverable
         cover={
           <img
-            alt='example'
-            src='/content1.png'
+            alt="example"
+            src="/content1.png"
           />
         }
       >
@@ -95,10 +95,10 @@ function NumberList() {
 }
 function NumberListDoc() {
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: "100%" }}>
       {listNews.map((item) => (
         <List
-          itemLayout='horizontal'
+          itemLayout="horizontal"
           dataSource={listNews}
           renderItem={(item, index) => (
             <List.Item>
@@ -108,8 +108,8 @@ function NumberListDoc() {
                     style={{
                       width: 250,
                     }}
-                    src='/content3.jpg'
-                    alt=''
+                    src="/content3.jpg"
+                    alt=""
                   />
                 }
                 title={
@@ -127,7 +127,7 @@ function NumberListDoc() {
       ))}
       <div
         style={{
-          textAlign: 'center',
+          textAlign: "center",
         }}
         // dangerouslySetInnerHTML={{ __html: '' }}
       >
@@ -145,7 +145,7 @@ function RightNews() {
     <div>
       <h4>Xem nhiều nhất</h4>
       <List
-        itemLayout='horizontal'
+        itemLayout="horizontal"
         dataSource={listNews}
         renderItem={(item, index) => (
           <List.Item>
@@ -155,8 +155,8 @@ function RightNews() {
                   style={{
                     width: 150,
                   }}
-                  src='/content3.jpg'
-                  alt=''
+                  src="/content3.jpg"
+                  alt=""
                 />
               }
               title={item.title}
@@ -176,7 +176,7 @@ const ContentPage: FunctionComponent<ContentPageProps> = () => {
     <>
       <div>
         <List
-          itemLayout='horizontal'
+          itemLayout="horizontal"
           dataSource={listNews1}
           renderItem={(item, index) => (
             <List.Item>
@@ -186,8 +186,8 @@ const ContentPage: FunctionComponent<ContentPageProps> = () => {
                     style={{
                       width: 450,
                     }}
-                    src='/content2.jpg'
-                    alt=''
+                    src="/content2.jpg"
+                    alt=""
                   />
                 }
                 title={item.title}

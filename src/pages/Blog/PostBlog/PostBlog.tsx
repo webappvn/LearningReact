@@ -1,7 +1,9 @@
-import { FunctionComponent } from 'react';
-import { Breadcrumb, Button, Col, Divider, Row } from 'antd';
-import { HomeOutlined, ShareAltOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+import { FunctionComponent } from "react";
+import { Breadcrumb, Button, Col, Divider, Row } from "antd";
+import { HomeOutlined, ShareAltOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import Header from "../../../components/header/Header";
+import Footer from "../../../components/footer/Footers";
 
 interface PostBlogProps {}
 
@@ -39,45 +41,46 @@ const PostBlog: FunctionComponent<PostBlogProps> = () => {
 
   return (
     <>
-      <div className='detai-post'>
-        <div style={{ padding: '50px 0' }}>
+      <Header></Header>
+      <div className="detai-post">
+        <div style={{ padding: "50px 0" }}>
           <Breadcrumb
-            separator='>'
+            separator=">"
             items={[
               {
                 title: <HomeOutlined />,
               },
               {
-                title: <Link to='/blog'>Blog</Link>,
+                title: <Link to="/blog">Blog</Link>,
               },
               {
                 title: (
-                  <Link to='/tai-chinh-bao-hiem'>Tài Chính - Bảo Hiểm</Link>
+                  <Link to="/tai-chinh-bao-hiem">Tài Chính - Bảo Hiểm</Link>
                 ),
               },
               {
-                title: 'Cách tính lãi suất trả góp điện thoại',
+                title: "Cách tính lãi suất trả góp điện thoại",
               },
             ]}
           />
         </div>
         <div>
           <img
-            src='/content2.jpg'
-            alt=''
+            src="/content2.jpg"
+            alt=""
           />
           <Row
             gutter={50}
-            style={{ padding: '50px 0' }}
+            style={{ padding: "50px 0" }}
           >
             <Col
               xs={24}
               lg={16}
               xl={18}
             >
-              <div className='flex'>
-                <div className='flex-auto'>
-                  <Link to='/blog'>Tài Chính - Bảo Hiểm</Link>
+              <div className="flex">
+                <div className="flex-auto">
+                  <Link to="/blog">Tài Chính - Bảo Hiểm</Link>
                   <p>5 phút đọc</p>
                 </div>
                 <div>
@@ -95,14 +98,15 @@ const PostBlog: FunctionComponent<PostBlogProps> = () => {
               xl={6}
             >
               MỤC LỤC
-              <Divider type='horizontal' />
-              <a href='a'>Mua sắm qua phương thức trả góp là gì?</a>
-              <Divider type='horizontal' />
-              <a href='a'>Mua sắm qua phương thức trả góp là gì?</a>
+              <Divider type="horizontal" />
+              <a href="a">Mua sắm qua phương thức trả góp là gì?</a>
+              <Divider type="horizontal" />
+              <a href="a">Mua sắm qua phương thức trả góp là gì?</a>
             </Col>
           </Row>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

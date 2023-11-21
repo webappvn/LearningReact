@@ -1,19 +1,22 @@
 .header {
   padding-left: 20px;
   padding-right: 20px;
-  height: 50px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 12px;
+  gap: 20px;
   .menu {
     text-align: center;
-    line-height: 60px;
+    display: flow-root;
   }
   .item-menu {
     width: 150px;
     float: left;
     font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
     span {
-      height: 50px;
       display: inline-block;
       cursor: pointer;
     }
