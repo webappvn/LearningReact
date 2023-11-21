@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './App.scss';
 import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import { routerConfig } from './routerConfig';
+import MyClassBlog from './pages/MyClassBlog/MyClassBlog';
+import Login from './pages/Login/Login';
+import Blog from './pages/Blog/Blog';
 
 function App() {
   const routerComponent = routerConfig.map(({ path, component }, key) => {
@@ -13,8 +16,8 @@ function App() {
   });
   return (
     <Routes>
-      {routerComponent}
-      {/* <Route
+      {/* {routerComponent} */}
+      <Route
         // path='/classComponent/:code'
         path='/blog/:code'
         element={<Blog />}
@@ -26,7 +29,11 @@ function App() {
       <Route
         path='/classComponent'
         Component={MyClassBlog}
-      /> */}
+      />
+      <Route
+        path='/login'
+        Component={Login}
+      />
     </Routes>
   );
 }
