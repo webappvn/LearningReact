@@ -1,9 +1,8 @@
-import { FunctionComponent } from "react";
-import { Breadcrumb, Button, Col, Divider, Row } from "antd";
 import { HomeOutlined, ShareAltOutlined } from "@ant-design/icons";
+import { Breadcrumb, Button, Col, Divider, Row } from "antd";
+import { FunctionComponent } from "react";
 import { Link } from "react-router-dom";
-import Header from "../../../components/header/Header";
-import Footer from "../../../components/footer/Footers";
+import "./PostBlog.scss";
 
 interface PostBlogProps {}
 

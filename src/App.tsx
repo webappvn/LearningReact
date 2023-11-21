@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import { routerConfig } from "./routerConfig";
+import "./i18n";
 
 function App() {
   return (
