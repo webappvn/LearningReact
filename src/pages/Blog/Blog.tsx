@@ -75,7 +75,7 @@ const Blog: FunctionComponent<BlogProps> = (props) => {
   return (
     <>
       <div style={{ maxWidth: "1200px", margin: "auto" }}>
-        <Header></Header>
+        {/* <Header></Header> */}
         <div
           className="Blog"
           style={{ minHeight: "100vh" }}
@@ -93,7 +93,7 @@ const Blog: FunctionComponent<BlogProps> = (props) => {
           )}
           {/* {!data?.title && <PostBlog />} */}
         </div>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </div>
     </>
   );

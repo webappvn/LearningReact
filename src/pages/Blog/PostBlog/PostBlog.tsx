@@ -41,7 +41,6 @@ const PostBlog: FunctionComponent<PostBlogProps> = () => {
 
   return (
     <>
-      <Header></Header>
       <div className="detai-post">
         <div style={{ padding: "50px 0" }}>
           <Breadcrumb
@@ -106,7 +105,6 @@ const PostBlog: FunctionComponent<PostBlogProps> = () => {
           </Row>
         </div>
       </div>
-      <Footer></Footer>
     </>
   );
 };
