@@ -5,6 +5,7 @@ import { routerConfig } from './routerConfig';
 import MyClassBlog from './pages/MyClassBlog/MyClassBlog';
 import Login from './pages/Login/Login';
 import Blog from './pages/Blog/Blog';
+import ForgotPass from './pages/ForgotPass/ForgotPass';
 
 function App() {
   const routerComponent = routerConfig.map(({ path, component }, key) => {
@@ -33,6 +34,10 @@ function App() {
       <Route
         path='/login'
         Component={Login}
+      />
+      <Route
+        path='/forgotPass'
+        Component={ForgotPass}
       />
     </Routes>
   );
